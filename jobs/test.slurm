@@ -2,9 +2,9 @@
 
 #SBATCH --job-name="test"
 #SBATCH --partition=medium
-#SBATCH --nodes=6
+#SBATCH --nodes=1
 #SBATCH --time=2-00:00:00
-#SBATCH --mem=20GB
+#SBATCH --mem=10GB
 #SBATCH --mail-user=xue20@wfu.edu
 #SBATCH --mail-type=BEGIN,END,FAIL
 #SBATCH --gres=gpu
