@@ -1,7 +1,7 @@
 #!/bin/bash -l
 
 #SBATCH --job-name="test"
-#SBATCH --partition=gpu
+#SBATCH --partition=medium
 #SBATCH --nodes=6
 #SBATCH --time=2-00:00:00
 #SBATCH --mem=20GB
