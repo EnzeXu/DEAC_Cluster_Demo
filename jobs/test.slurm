@@ -14,4 +14,4 @@
 
 echo $(pwd) > "jobs/pwd.txt"
 source /deac/csc/chenGrp/software/tensorflow/bin/activate
-python demo.py --log_file logs/log_test.txt
+python demo.py --log_path logs/log_test.txt
