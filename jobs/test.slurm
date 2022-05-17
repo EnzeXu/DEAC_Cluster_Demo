@@ -10,8 +10,8 @@
 
 
 #SBATCH --output="jobs_oe/test-%jo"
-#SBATCH --error="jobs_oe/eta1_+1-%je"
+#SBATCH --error="jobs_oe/test-%je"
 
-echo $(pwd) > "pwd.txt"
-#source /deac/csc/chenGrp/software/tensorflow/bin/activate
-#python demo.py --log_file logs/log_test.txt
+echo $(pwd) > "jobs/pwd.txt"
+source /deac/csc/chenGrp/software/tensorflow/bin/activate
+python demo.py --log_file logs/log_test.txt
