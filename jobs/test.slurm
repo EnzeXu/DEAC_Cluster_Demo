@@ -9,9 +9,9 @@
 #SBATCH --mail-type=BEGIN,END,FAIL
 
 
-#SBATCH --output="job/test-%jo"
-#SBATCH --error="job/eta1_+1-%je"
+#SBATCH --output="jobs_oe/test-%jo"
+#SBATCH --error="jobs_oe/eta1_+1-%je"
 
 echo $(pwd) > "pwd.txt"
 #source /deac/csc/chenGrp/software/tensorflow/bin/activate
-#python ../demo.py --log_file ../logs/log_test.txt
+#python demo.py --log_file logs/log_test.txt
