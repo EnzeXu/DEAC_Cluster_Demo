@@ -7,7 +7,7 @@
 #SBATCH --mem=20GB
 #SBATCH --mail-user=xue20@wfu.edu
 #SBATCH --mail-type=BEGIN,END,FAIL
-#SBATCH --gres=gpu:V100:1
+#SBATCH --gres=gpu
 
 
 #SBATCH --output="jobs_oe/test-%jo"
