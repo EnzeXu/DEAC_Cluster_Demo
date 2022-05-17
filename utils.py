@@ -35,10 +35,12 @@ def demo():
     device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
     epoch = opt.epoch
     myprint("log_path: {}".format(log_path), log_path)
+    myprint("cuda is available: {}".format(torch.cuda.is_available()), log_path)
     myprint("using: {}".format(device), log_path)
     myprint("epoch: {}".format(epoch), log_path)
 
 
 if __name__ == "__main__":
     # myprint("hello world!", "logs/1.txt")
+    print(torch.cuda.is_available())
     pass

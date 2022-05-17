@@ -1,18 +1,13 @@
 #!/bin/bash -l
 
-
-
-#!/bin/bash
-#SBATCH --job-name=GPUJOB
+#SBATCH --job-name="test"
+#SBATCH --partition=gpu
 #SBATCH --nodes=1
-#SBATCH --ntasks-per-node=1
-#SBATCH --time=0-12:00:00
+#SBATCH --time=2-00:00:00
+#SBATCH --mem=10GB
 #SBATCH --mail-user=xue20@wfu.edu
 #SBATCH --mail-type=BEGIN,END,FAIL
-#SBATCH --account="chenGrp"
-#SBATCH --partition=gpu
-#SBATCH --mem=120gb
-#SBATCH --gres=gpu:V100:1
+
 
 
 #SBATCH --output="jobs_oe/test-%jo"
